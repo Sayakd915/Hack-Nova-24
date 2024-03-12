@@ -136,14 +136,14 @@ def open_new_gui():
     labelframe=LabelFrame(new_window,bd=2,relief=RIDGE,text="Players Information",font=("times new roman",20,"bold"),padx=3)
     labelframe.place(x=9,y=70,width=550,height=720)
 
-    img3=Image.open("C:\Users\SAYAK DAS\OneDrive\Desktop\Code\HackNova\CricketLogo.jpg")
+    img3=Image.open("CricketLogo.jpg")
     img3=img3.resize((100,60),Image.BICUBIC)
     photoimg3=ImageTk.PhotoImage(img3)
 
     lblimg1=Label(new_window,image=photoimg3,bd=0,relief=RIDGE)
     lblimg1.place(x=0,y=3,width=100,height=60)
 
-    img2=Image.open("C:\Users\SAYAK DAS\OneDrive\Desktop\Code\HackNova\cricketicon.jpg")
+    img2=Image.open("cricketicon.jpg")
     img2=img2.resize((550,710),Image.BICUBIC)
     photoimg2=ImageTk.PhotoImage(img2)
 
@@ -171,7 +171,7 @@ def open_new_gui():
     btnGO=Button(lblimg1,text="Go",font=("arial",12,"bold"),bg="black",fg="gold",width=10,padx=2,pady=6,command=lambda:fm.plotGraph(graph_variable.get()))
     btnGO.place(x=280,y=480,width=100,height=45)
 
-    img=Image.open("C:/Users/SAYAK DAS/OneDrive/Desktop/Code/HackNova/cricketicon2.jpg")
+    img=Image.open("cricketicon2.jpg")
     img=img.resize((950,360),Image.BICUBIC)
     photoimg=ImageTk.PhotoImage(img)
 
@@ -268,7 +268,7 @@ image_frame = ttk.Frame(grid_frame)
 image_frame.grid(column=0, row=1, sticky="s")
 
 # Load the image
-image = tk.PhotoImage(r"C:/Users/SAYAK DAS/OneDrive/Desktop/Code/HackNova/background_image.png")
+image = tk.PhotoImage(r"background_image.png")
 
 # Create a label with the image
 image_label = ttk.Label(image_frame, image=image)
